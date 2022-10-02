@@ -18,7 +18,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Get version
-      run: grep -m 1 version pyproject.toml | cut --delimiter="=" -f2 | cut -d '"' -f 2
+      run: echo "::set-output name=version::$(grep -m 1 version pyproject.toml | cut --delimiter="=" -f2 | cut -d '"' -f 2)"
       id: get_version
     
     - name: Set up QEMU
