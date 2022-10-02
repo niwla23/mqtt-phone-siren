@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mqtt-phone-siren"
+version = "0.1.0"
+description = ""
+authors = ["niwla23 <46248939+niwla23@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fritzconnection = "^1.10.3"
+paho-mqtt = "^1.6.1"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
